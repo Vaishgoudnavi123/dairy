@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Diary</h1>
+        <form id="diaryForm">
+            <label for="mood">How do you feel today?</label>
+            <select id="mood" required>
+                <option value="">Select Mood</option>
+                <option value="Happy">😊 Happy</option>
+                <option value="Sad">😢 Sad</option>
+                <option value="Angry">😠 Angry</option>
+                <option value="Excited">😃 Excited</option>
+                <option value="Neutral">😐 Neutral</option>
+            </select>
+
+            <label for="note">Your Note:</label>
+            <textarea id="note" rows="4" required></textarea>
+
+            <label for="image">Upload a Picture:</label>
+            <input type="file" id="image" accept="image/*">
+
+            <button type="submit">Add Entry</button>
+        </form>
+
+        <div id="entries" class="entries"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
